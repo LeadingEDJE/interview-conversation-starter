@@ -19,8 +19,8 @@
 
 ## What it needs to do
 
-Pick any single resource type you like — projects, invoices, notes, whatever. One is
-plenty.
+You'll need something for tenants to own, so make one up: a single resource type of your
+choosing — projects, invoices, notes, whatever you like. One is plenty.
 
 1. **Every record belongs to a tenant**, and every request arrives identified with a tenant
    and a role. A header or a stub token is completely fine; you don't need real
@@ -31,8 +31,11 @@ plenty.
 
 ## Not in scope — please don't build these
 
-We mean this. These are the things that turn an hour into an afternoon, and we're not
-looking for them:
+These are the things that turn an hour into an afternoon. We're not looking for them, so
+please don't build them for the submission. That's about features, not your habits: if you
+normally poke your endpoints with a request collection, write a quick seed script, or keep
+data in a SQLite file so it survives restarts, go ahead. It won't count against you. Just
+don't build these because you think we want them:
 
 - Real authentication — no login, no password hashing, no signed tokens, no identity provider
 - Endpoints for managing users, roles, or tenants
