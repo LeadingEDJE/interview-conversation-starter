@@ -29,8 +29,11 @@ this brief — 150 records.
 
 ## Not in scope — please don't build these
 
-We mean this. These are the things that turn an hour into an afternoon, and we're not
-looking for them:
+These are the things that turn an hour into an afternoon. We're not looking for them, so
+please don't build them for the submission. That's about features, not your habits: if you
+normally poke your endpoints with a request collection, write a quick seed script, or keep
+data in a SQLite file so it survives restarts, go ahead. It won't count against you. Just
+don't build these because you think we want them:
 
 - An HTTP API or any endpoint over the loaded data
 - Incremental or streaming loads

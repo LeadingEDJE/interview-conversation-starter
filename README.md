@@ -20,18 +20,22 @@ talk about for an hour.
 actually reach for. We work across a lot of technologies and we are not checking whether
 you write a particular one the way we would.
 
-**2. It has to be containerized.** A `Dockerfile`, or a compose file. One command should
-bring it up.
+**2. It has to be containerized, and Docker is the only thing you can assume.** Assume the
+machine we run it on has Docker (with Compose) and nothing else: no language runtime, no
+package manager, no `make`, no `curl`, no particular shell. Everything your project needs,
+toolchain included, runs inside containers. One command should bring it up.
 
-**3. It has to be shown to work.** Automated tests, a `curl` script, a `make demo` target,
-screenshots, a two-minute screen recording — we don't care which. We care that you picked
-one and can say why it was the right one for this.
+**3. It has to be shown to work.** Automated tests, a demo script that exercises it, sample
+runs — we don't care which. We care that you picked one and can say why it was the right
+one for this. Whatever you choose goes in the repo, and we have to be able to run it with
+Docker alone (for example, a compose service that runs the tests or the demo). Screenshots
+or a short recording are welcome as extras, not as the only proof. You'll also run it live
+for us in the session.
 
-**4. Tell us how to run it.** A line in your README, a Makefile target, whatever's natural.
-Not a document — just enough that we can start it.
+**4. Tell us how to run it.** A few lines in your README with the exact commands to start
+it and to run your proof. Not a document — just enough that we can start it.
 
-**5. Commit the way you normally would.** Please don't squash the hour into one commit. How
-the work unfolded is part of what we read.
+**5. Commit the way you normally would.** How the work unfolded is part of what we read.
 
 **6. Build it fresh.** Not something you already had lying around.
 
@@ -42,7 +46,7 @@ what we're looking at. If you finish early, stop.
 **8. AI tools are welcome, and so is not using them.** Use your normal setup. We'll ask you
 about it either way, and "I didn't, because..." is a perfectly good answer.
 
-**9. There's nothing to write up.** No design doc, no trade-offs memo, no summary. We'd
+**9. Beyond those run instructions, there's nothing to write up.** No design doc, no trade-offs memo, no summary. We'd
 much rather hear it from you in the session than read a tidied-up version beforehand. Jot
 notes for yourself if it helps you present — we won't ask to see them.
 

@@ -18,13 +18,17 @@
 
 1. **Save a JSON document** under a collection name and an id. Any shape — you don't know
    what's in it, and you shouldn't need to.
-2. **Fetch it back** by collection and id, and **list** what's in a collection.
+2. **Fetch it back** by collection and id, and **list the ids** of the documents in a
+   collection.
 3. **Keep the previous content when a document is updated**, and make it retrievable.
 
 ## Not in scope — please don't build these
 
-We mean this. These are the things that turn an hour into an afternoon, and we're not
-looking for them:
+These are the things that turn an hour into an afternoon. We're not looking for them, so
+please don't build them for the submission. That's about features, not your habits: if you
+normally poke your endpoints with a request collection, write a quick seed script, or keep
+data in a SQLite file so it survives restarts, go ahead. It won't count against you. Just
+don't build these because you think we want them:
 
 - Authentication or authorisation of any kind
 - Pagination
