@@ -30,7 +30,7 @@ normally poke your endpoints with a request collection, write a quick seed scrip
 data in a SQLite file so it survives restarts, go ahead. It won't count against you. Just
 don't build these because you think we want them:
 
-- Authentication or authorisation of any kind
+- Authentication or authorization of any kind
 - Pagination
 - Delete
 - Search, filtering, or any kind of query language
